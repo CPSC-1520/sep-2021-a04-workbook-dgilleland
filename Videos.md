@@ -5,21 +5,21 @@
 CPSC-1520 | Sep 2021 | A04
 
 
-[0:00] Intro
-[0:21] Agenda and Announcements
-[1:33] Moodle
-[3:05] Course Introduction
-[6:18] Student Evaluations
-[11:45] Screenshots & MS Teams
-[13:38] Questions for Students
-[17:00] GitHub Intro & Account Setup
-[23:12] Student Workbook
-[28:35] Quick Review of Workbook Contents
-[30:30] Software Requirements
-[50:00] Cloning Your Workbook
-[1:15:22] Videos of Class Meetings
-[1:18:47] End of Class
-[1:19:09] - Outro + Credits
+- [0:00] Intro
+- [0:21] Agenda and Announcements
+- [1:33] Moodle
+- [3:05] Course Introduction
+- [6:18] Student Evaluations
+- [11:45] Screenshots & MS Teams
+- [13:38] Questions for Students
+- [17:00] GitHub Intro & Account Setup
+- [23:12] Student Workbook
+- [28:35] Quick Review of Workbook Contents
+- [30:30] Software Requirements
+- [50:00] Cloning Your Workbook
+- [1:15:22] Videos of Class Meetings
+- [1:18:47] End of Class
+- [1:19:09] - Outro + Credits
 
 ## W01-D3
 

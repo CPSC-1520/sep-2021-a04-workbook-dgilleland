@@ -8,6 +8,8 @@
 
 - [My Class Notes](./Journal.md)
 - [git Commands](./git-commands.md)
+- [git and VS Code](./git+VSCode.md)
+- [Using Markdown](./Markdown.md)
 - [Google - My Friend](https://google.ca)
 
 ----

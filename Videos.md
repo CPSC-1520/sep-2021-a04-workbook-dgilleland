@@ -96,8 +96,10 @@ CPSC-1520 | Sep 2021 | A04
 
 [0:00] Intro
 [0:21] Agenda and Announcements
-
-[2:00:00] - Outro + Credits
+[1:56] Answer to Practice Agreement homework
+[17:00] Anonymous Function Demo
+[20:24] Prep practice
+[35:46] - Outro + Credits
 
 ----
 ![Next Week](./docs/images/Video-Separator.jpg)

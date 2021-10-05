@@ -26,7 +26,7 @@
   - Breakpoints, Variable Values, and Stepping Through Code
 - **In-Class Assignment** - Event Listeners (60 min)
 
-## Oct 4
+## Oct 5
 
 - If-Else
   - Demo-thumbnails

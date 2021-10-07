@@ -30,3 +30,15 @@
 
 - If-Else
   - Demo-thumbnails
+
+## Oct 7
+
+- Announcements
+- Explore the Rendered Page
+- Forms
+
+## Oct 8
+
+- Review Take-Home Lab
+- In-Class - If/Else
+

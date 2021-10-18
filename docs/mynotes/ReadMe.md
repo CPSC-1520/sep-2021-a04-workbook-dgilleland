@@ -11,6 +11,7 @@
 - [git and VS Code](./git+VSCode.md)
 - [Using Markdown](./Markdown.md)
 - [Google - My Friend](https://google.ca)
+- [DOM Objects and Mapping JS to HTML](./dom-objects.md)
 
 ----
 

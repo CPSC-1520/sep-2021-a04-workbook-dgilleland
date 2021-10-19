@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer type="module"></script>
+    <style>
+        .bg { background-color: darkkhaki;}
+    </style>
+</head>
+<body>
+    <form>
+        <label>Repeat
+            <input type="number" name="max" value="5" />
+        </label>
+        <label>Delay
+            <select name="delay">
+                <option value="1000">1 Sec</option>
+                <option value="2000">2 Sec</option>
+                <option value="5000">5 Sec</option>
+            </select>
+        </label>
+        <button type="submit">Run Loop</button>
+    </form>
+    <pre id="printDots" class="bg"></pre>
+</body>
+</html>

@@ -7,6 +7,7 @@ let availableLetters = LETTERS;
 
 const nextWord = function() {
     let wordList = document.querySelectorAll('li');
+    console.log(wordList);
     // TODO: Return the item at the selectedWord index, and also increment the index number.
     let selected = wordList[selectedWord];
     selectedWord++; // Increment my index variable
@@ -28,6 +29,22 @@ const fillGameboard = function() {
         newGameboard += '<div>' + theWord[index] + '</div>';
     }
     document.querySelector('.gameboard').innerHTML = newGameboard;
+}
+
+const isGameOver = function() {
+    // Check all of the <div> elements in my gameboard to see if the reveal class has been added to all the elements
+    let letterDivs = document.querySelectorAll('.gameboard div');
+    // console.log(letterDivs.constructor.prototype.name);
+    // letterDivs is a NodeList, but I can still use it somewhat like an array
+    let allRevealed = true; // Start optimistically
+    // Loop through all the elements in the NodeList
+    for(let pos = 0; pos < letterDivs.length; pos++) {
+        // Check to see if it's missing the .reveal class
+        if(! letterDivs[pos].classList.contains('reveal')) {
+            allRevealed = false;
+        }
+    }
+    return allRevealed;
 }
 
 // Add an event handler for the textbox input.
@@ -64,6 +81,14 @@ const guessWord = function(evt) {
                 }
                 // Remove the guessed letter from the available letters
                 availableLetters = availableLetters.replace(letter, '');
+                // Check to see if all the letters have been discovered
+                if(isGameOver()) {
+                    alert('You won!!');
+                    if(confirm('Play another word?')) {
+                        availableLetters = LETTERS;
+                        fillGameboard(); // Start up another game.
+                    }
+                }
             } else {
                 // they already used up that letter
                 out.innerHTML = '<i>You already guessed that letter</i>';
@@ -94,5 +119,4 @@ document.querySelector('form')
             evt.preventDefault();
         })
 
-// Start the game with the first word to guess.
-fillGameboard();
+fillGameboard(); // run the game

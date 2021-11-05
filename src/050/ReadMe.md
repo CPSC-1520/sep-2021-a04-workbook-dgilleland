@@ -45,6 +45,13 @@ for (let idx = 0; idx < images.length; idx += 1) {
 }
 ```
 
+Since the bullets are meant to be "in sync" with the active image in the carousel, we should apply the `active` class to the appropirate `<span>` element.
+
+```js
+// highlight the first bullet as 'active'
+imageTracker.querySelectorAll('span')[0].classList.add('active');
+```
+
 In the event listener for the carousel, let's address the situation of the selector bullet being clicked by adding an `else` block.
 
 ```js

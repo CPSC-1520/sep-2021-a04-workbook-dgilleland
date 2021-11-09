@@ -47,8 +47,8 @@ Another way to avoid pollutting the global namespace is to use an *Immediately I
 
 > Demonstrate some of the DOM API properties for finding elements & node children
 >
-> - `.nextElementSibling`
-> - `.firstElmementChild`
+> - `.nextElementSibling` - describe
+> - `.firstElementChild`
 > - `.lastElementChild`
 > - `.children`
 > - `.textContent`
@@ -57,8 +57,13 @@ Another way to avoid pollutting the global namespace is to use an *Immediately I
 >
 > - `.createElement('tag')`
 > - `.createTextNode('text')`
+> - `.setAttribute(name, value)`
+> - `.getAttribute(name)`
+> - `.removeAttribute(name)`
 > - `.appendChild(node)`
 > - `.insertBefore(newChild, refChild)`
+> - `.removeChild(node)`
+> - `.replaceChild(newChild, existingChild)`
 
 ----
 

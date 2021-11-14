@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
+    <link href="./prism.css" rel="stylesheet" />
+    <script src="./prism.js" defer data-manual></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-html.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <style>
+        #formContent {
+            background-color: cadetblue;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Builder</h1>
+    <p>Use this form to dynamically create a set of user input controls. When you click the <kbd>Show HTML</kbd> button, you can copy the generated HTML to your clipboard.</p>
+    <form id="builder">
+        <label>Label Text
+            <input type="text" name="labelText" autofocus />
+        </label>
+        <label>Control Name
+            <input type="text" name="controlName" />
+        </label>
+        <label>Control Type
+            <select name="controlType">
+                <option value="">[Select a type]</option>
+                <option>text</option>
+                <option>email</option>
+                <option>number</option>
+                <option>checkbox</option>
+                <option>radio</option>
+                <option>date</option>
+            </select>
+        </label>
+
+        <button type="submit">Add Control</button>
+        <button type="reset">Clear Fields</button>
+        <button type="button">Show HTML</button>
+    </form>
+
+    <!-- My Dynamic Form will appear below -->
+    <section id="formContent"></section>
+
+    <dialog id="rawHTML">
+        <button type="button">Close</button>
+        <pre style="white-space: pre-wrap;"><code class="language-html"></code></pre>
+    </dialog>
+
+    <blockquote>
+        <p>Credits:</p>
+        <p>The formatting of the HTML in the dialog is accomplished through the following 3rd-party libraries.</p>
+        <ol>
+            <li><a href="https://github.com/beautify-web/js-beautify" target="_blank">js-beautify</a></li>
+            <li><a href="https://prismjs.com/download.html#themes=prism-coy&languages=markup&plugins=keep-markup+toolbar+copy-to-clipboard" target="_blank">PrismJS</a> with plugins</li>
+        </ol>
+    </blockquote>
+</body>
+</html>

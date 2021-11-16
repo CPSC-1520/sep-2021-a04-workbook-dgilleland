@@ -47,7 +47,7 @@ Another way to avoid pollutting the global namespace is to use an *Immediately I
 
 > Demonstrate some of the DOM API properties for finding elements & node children
 >
-> - `.nextElementSibling` - describe
+> - `.nextElementSibling`
 > - `.firstElementChild`
 > - `.lastElementChild`
 > - `.children`

@@ -63,3 +63,9 @@
 - Lab 1 Solution
 - Slide-Show Practice Solution
 
+## Nov 30/Dec 2,3
+
+- Objects
+- JSON (JavaScript Object Notation)
+- AJAX using the Fetch API
+

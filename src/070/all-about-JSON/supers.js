@@ -10,14 +10,16 @@
     }
 
     const parseJson = function(response) {
-        if(!response.ok) {
-            throw Error(response.status, {cause: response.statusText});
-        } else {
+        if(response.ok) { // All good, now we will parse the JSON
             return response.json();
+        } else { // Something went wrong in the network transfer
+            // The following error will be caught by the catch method
+            throw Error(response.status, {cause: response.statusText});
         }
     }
+
     const display = function(data) {
-        displaySupers.replaceChildren();
+        displaySupers.replaceChildren(); // emptying the <section>
         for(let count = 0; count < data.length; count++) {
             let result = buildSupe(data[count]);
             displaySupers.appendChild(result);
@@ -34,7 +36,7 @@
         image.src = `./images/${data.Photo}`;
         h2.innerText = data.Name;
         quote.innerText = data.Alias;
-        for(power in data.Superpowers) {
+        for(power of data.Superpowers) {
             let li = document.createElement('li');
             let txt = document.createTextNode(power);
             li.appendChild(txt);

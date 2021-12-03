@@ -29,8 +29,16 @@ let myGlobal; // leave it undefined.
     // but, don't expect an immediate response!
     console.log("My global data", myGlobal);
 
+    // A regular function
     const showData = function(evt) {
         textHolder.innerText = JSON.stringify(myGlobal, null, 2);
     }
+
+    // An Arrow function
+    const clearTextHolder = (evt) => {
+        textHolder.innerText = '';
+    }
+    
     showJson.addEventListener('click', showData);
+    textHolder.addEventListener('click', clearTextHolder);
 })();
